@@ -3,7 +3,8 @@ Path planning algorithm. Built for ROS with roscpp, rospy and for mavlink/mavros
 
 This ROS node consists only of one listener (subscriber), who listens on topic 'waypoint_release_spot'.
 If a 'waypoint_planning/Coordinates'(float64 longitude, float64 latitude) message is published in that topic,
-then the listener produces 4 waypoint path files (wpPlanUAV$I.txt - mavlink dialect) around the initial spot. (I = 1,2,3,4)
+then the listener produces 4 waypoint path files (wpPlanUAV$I.txt - mavlink dialect) around the initial spot. 
+(I = 1,2,3,4)
 
 For now the coverage is static. Each path covers an area of 2km by 2km and the footprint size is 250m.
 
