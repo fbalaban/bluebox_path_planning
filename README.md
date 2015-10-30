@@ -19,8 +19,8 @@ Sum up:
 2. source the project ('source devel/setup.bash').
 3. 'rosrun waypoint_planning listener'.
 4. Either
-   4.1 rostopic pub -1 /waypoint_release_spot waypoint_planning/Coordinates [longitude] [latitude]
-or
-   4.2 path_planning_service_publisher.py [longitude] [latitude]
+  4.1 rostopic pub -1 /waypoint_release_spot waypoint_planning/Coordinates [longitude] [latitude]
+ or
+  4.2 path_planning_service_publisher.py [longitude] [latitude]
 
 In 4.2. four (4) mavros instances must be up having names mavros$I.
