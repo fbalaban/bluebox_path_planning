@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "waypoint_planning")
+set(waypoint_planning_MAINTAINER "fotis balampanis <fbalampanis@us.es>")
+set(waypoint_planning_DEPRECATED "")
+set(waypoint_planning_VERSION "0.0.0")
+set(waypoint_planning_BUILD_DEPENDS "message_generation" "roscpp" "rospy" "std_msgs")
+set(waypoint_planning_RUN_DEPENDS "message_runtime" "roscpp" "rospy" "std_msgs")
+set(waypoint_planning_BUILDTOOL_DEPENDS "catkin")

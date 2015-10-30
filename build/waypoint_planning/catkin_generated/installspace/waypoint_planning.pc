@@ -1,0 +1,8 @@
+prefix=/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/install
+
+Name: waypoint_planning
+Description: Description of waypoint_planning
+Version: 0.0.0
+Cflags: -I/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/install/include
+Libs: -L/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/install/lib 
+Requires: roscpp rospy std_msgs message_runtime

@@ -1,0 +1,2 @@
+waypoint_planning
+-DCATKIN_DEVEL_PREFIX=/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel -DCMAKE_INSTALL_PREFIX=/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/install -G Unix Makefiles

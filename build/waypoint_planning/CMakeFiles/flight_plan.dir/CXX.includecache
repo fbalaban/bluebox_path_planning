@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/include/waypoint_planning/camera_model.h
+waypoint_planning/fparams.h
+-
+
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/include/waypoint_planning/flight_plan.h
+waypoint_planning/map.h
+-
+waypoint_planning/fparams.h
+-
+
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/include/waypoint_planning/fparams.h
+
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/include/waypoint_planning/map.h
+waypoint_planning/camera_model.h
+-
+waypoint_planning/fparams.h
+-
+fstream
+-
+
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/include/waypoint_planning/transformation_utilities.h
+cmath
+-
+
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/src/flight_plan.cpp
+iostream
+-
+fstream
+-
+sstream
+-
+waypoint_planning/flight_plan.h
+-
+waypoint_planning/map.h
+-
+waypoint_planning/transformation_utilities.h
+-
+
