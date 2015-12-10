@@ -46,7 +46,7 @@ CMAKE_BINARY_DIR = /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/cmake -E remove_directory /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/test_results
+	/usr/bin/python /opt/ros/indigo/share/catkin/cmake/test/remove_test_results.py /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make

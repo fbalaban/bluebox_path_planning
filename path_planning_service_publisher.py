@@ -22,7 +22,7 @@ release_spot_topic = 'waypoint_release_spot'
 
 if release_spot_topic in out:
    print("Found the listening topic! Procceding...")
-   bashCommand = "rostopic pub -1 /waypoint_release_spot waypoint_planning/Coordinates " + longitude + " " + latitude
+   bashCommand = "rostopic pub -1 /waypoint_release_spot waypoint_planning/Coordinates -- " + longitude + " " + latitude
    os.system(bashCommand)
 else:
    print("Waypoint planner listener topic not found. Maybe forgot to source or launch the node?")

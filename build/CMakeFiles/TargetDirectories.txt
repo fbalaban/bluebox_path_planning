@@ -1,5 +1,6 @@
 /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Coordinates.dir
 /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles/clean_test_results.dir
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles/clean_test_results_Project.dir
 /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles/download_extra_data.dir
 /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles/doxygen.dir
 /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/gtest/CMakeFiles/gtest.dir
