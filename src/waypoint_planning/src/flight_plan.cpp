@@ -55,7 +55,7 @@ waypoint LocalFlightPlan::detLocStartingWpt(map inputMap, flightPlan inputFPln,
 // by determining the center of each cell.
  // the method has been changed. no swipe direction in this version //
 void LocalFlightPlan::createLocalFP(map inputMap,
-		int initWPT, cell *inputCell, double lat, double lon) { // remove lat,lon to go back to previous implementation..
+		int initWPT, cell *inputCell, double lat, double lon, bool forSingleUAV, int for_uav_id) { // remove lat,lon to go back to previous implementation..
 
 	 // Define the size of the array
 	int size = inputMap.Nx * inputMap.Ny;
@@ -69,12 +69,24 @@ void LocalFlightPlan::createLocalFP(map inputMap,
 	fPlanData << "'UAVID', 'WptID', 'Py_map', 'Px_map',"<< endl;
 	fPlanDataCoordinates << "'UAVID', 'WptID', 'Lat', 'Lon',"<< endl;
 
+	int times;
+
+	if (forSingleUAV){
+		times = 2;	
+	} else {
+		times = 5;
+	}
+
 	// Creates an array of waypoints;
-	for (int i(1); i < 5; i++){
+	for (int i(1); i < times; i++){
 
 		stringstream filename;
-		filename << "wpPlanUAV" << i << ".txt";
 		
+		if (forSingleUAV){
+			filename << "wpPlanUAV" << for_uav_id << ".txt";
+		} else {
+			filename << "wpPlanUAV" << i << ".txt";
+		}
 		// see http://stackoverflow.com/questions/1374468/stringstream-string-and-char-conversion-confusion
 		const std::string& tmp = filename.str();
   		const char* cstr = tmp.c_str();
@@ -93,8 +105,13 @@ void LocalFlightPlan::createLocalFP(map inputMap,
 			localFP.wptList[j] = locWPT.localWpt;
 			localFP.wptList[j].IDNumber = j;
 
-			fPlanData << i << ", ";
-			fPlanDataCoordinates << i << ", ";
+			if (forSingleUAV){
+				fPlanData << for_uav_id << ", ";
+				fPlanDataCoordinates << for_uav_id << ", ";
+			} else {
+				fPlanData << i << ", ";
+				fPlanDataCoordinates << i << ", ";
+			}
 
 			fPlanData << localFP.wptList[j].IDNumber << ", ";
 			fPlanDataCoordinates << localFP.wptList[j].IDNumber << ", ";
@@ -123,9 +140,10 @@ void LocalFlightPlan::createLocalFP(map inputMap,
 			if (j<1){
 				// this is the initial position (the x spot). For now is the default location
 				// of the ardupilot simulation tests in Australia.
-				// The altitude variable in the final parameter indicates the above the sea level(?)
+				// The altitude variable is in the final parameter.
 				fWPPlan << "0\t1\t0\t16\t0\t0\t0\t0\t" << fixed << setprecision(7) << lat << "\t"
 						<< fixed <<  setprecision(7) << lon << "\t585\t1" << endl;
+				// TODO: IN REPLANNING (THERE SHOULD NOT BE A TAKE OFF COMMAND - OR IT SHOULD BE PARAMETERIZATION)
 				// and here is the first waypoint to takeoff to. when the UAVs are airborn,
 				// only waypoint commands like the following will be there are the plane doesn't
 				// need to take off.

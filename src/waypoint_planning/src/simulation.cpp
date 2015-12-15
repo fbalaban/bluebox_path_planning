@@ -22,7 +22,7 @@
 
 using namespace std;
 
-int perform_simulation(double longitude, double latitude, double altitude) {
+int perform_simulation(double longitude, double latitude, double altitude, bool forSingleUav, int for_uav_id) {
 
 	// Variable initialization
 	camera2 simCamera;
@@ -119,8 +119,10 @@ int perform_simulation(double longitude, double latitude, double altitude) {
 	// flight plan transforming the coordinates (testing purposes)
 	// should be done by using the GlobalFlightPlan made by Leo in the future.
 	// CHANGED: removed the flight direction (stub)
+	// CHANGED: added last bool parameter when we produce the files for a single UAV only
+	// (as it was in the first place actually...). TRUE for one UAV, FALSE for 4.
 	locFP.createLocalFP(sampleMap, 0, iC, fParams.fllhPosition.lat,
-			fParams.fllhPosition.lon);
+			fParams.fllhPosition.lon, forSingleUav, for_uav_id);
 
 	// Assign the actual Flight Plan to a FP Variable
 	inputFPln = locFP.localFP;

@@ -326,6 +326,7 @@ waypoint_planning/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_m
 
 # Convenience name for "clean" pass in the directory.
 waypoint_planning/clean: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Coordinates.dir/clean
+waypoint_planning/clean: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/clean
 waypoint_planning/clean: waypoint_planning/CMakeFiles/listener.dir/clean
 waypoint_planning/clean: waypoint_planning/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 waypoint_planning/clean: waypoint_planning/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
@@ -381,20 +382,51 @@ clean: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_d
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir
+
+# All Build rule for target.
+waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/all:
+	$(MAKE) -f waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/build.make waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/depend
+	$(MAKE) -f waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/build.make waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 
+	@echo "Built target _waypoint_planning_generate_messages_check_deps_Replan_Msg"
+.PHONY : waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/all
+
+# Build rule for subdir invocation for target.
+waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
+.PHONY : waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/rule
+
+# Convenience name for target.
+_waypoint_planning_generate_messages_check_deps_Replan_Msg: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/rule
+.PHONY : _waypoint_planning_generate_messages_check_deps_Replan_Msg
+
+# clean rule for target.
+waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/clean:
+	$(MAKE) -f waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/build.make waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/clean
+.PHONY : waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/clean
+
+# clean rule for target.
+clean: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target waypoint_planning/CMakeFiles/listener.dir
 
 # All Build rule for target.
-waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all
+waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/all
 waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/roscpp_generate_messages_py.dir/all
-waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all
 waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/std_msgs_generate_messages_py.dir/all
-waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/all
+waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 waypoint_planning/CMakeFiles/listener.dir/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/all
 	$(MAKE) -f waypoint_planning/CMakeFiles/listener.dir/build.make waypoint_planning/CMakeFiles/listener.dir/depend
 	$(MAKE) -f waypoint_planning/CMakeFiles/listener.dir/build.make waypoint_planning/CMakeFiles/listener.dir/build
@@ -408,7 +440,7 @@ all: waypoint_planning/CMakeFiles/listener.dir/all
 
 # Build rule for subdir invocation for target.
 waypoint_planning/CMakeFiles/listener.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/listener.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
 .PHONY : waypoint_planning/CMakeFiles/listener.dir/rule
@@ -718,7 +750,7 @@ waypoint_planning/CMakeFiles/waypoint_planning_gencpp.dir/all: waypoint_planning
 
 # Build rule for subdir invocation for target.
 waypoint_planning/CMakeFiles/waypoint_planning_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/waypoint_planning_gencpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_gencpp.dir/rule
@@ -740,8 +772,8 @@ clean: waypoint_planning/CMakeFiles/waypoint_planning_gencpp.dir/clean
 # Target rules for target waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir
 
 # All Build rule for target.
-waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/all
+waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/all
 	$(MAKE) -f waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/build.make waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/depend
 	$(MAKE) -f waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/build.make waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/build
@@ -755,7 +787,7 @@ all: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/all
 
 # Build rule for subdir invocation for target.
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/rule
@@ -777,17 +809,18 @@ clean: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages.dir/clea
 # Target rules for target waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir
 
 # All Build rule for target.
-waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/all: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Coordinates.dir/all
+waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/all: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/all
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/all: waypoint_planning/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/all: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Coordinates.dir/all
 	$(MAKE) -f waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/build.make waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/depend
 	$(MAKE) -f waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/build.make waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles  10 11
 	@echo "Built target waypoint_planning_generate_messages_cpp"
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/rule
@@ -809,17 +842,18 @@ clean: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/
 # Target rules for target waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir
 
 # All Build rule for target.
-waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Coordinates.dir/all
+waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/all
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all: waypoint_planning/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Coordinates.dir/all
 	$(MAKE) -f waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/build.make waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/depend
 	$(MAKE) -f waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/build.make waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles  11
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles  12 13
 	@echo "Built target waypoint_planning_generate_messages_lisp"
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir/rule
@@ -841,17 +875,18 @@ clean: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_lisp.dir
 # Target rules for target waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir
 
 # All Build rule for target.
-waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/all: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Coordinates.dir/all
+waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/all: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/all
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/all: waypoint_planning/CMakeFiles/std_msgs_generate_messages_py.dir/all
+waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/all: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Coordinates.dir/all
 	$(MAKE) -f waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/build.make waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/depend
 	$(MAKE) -f waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/build.make waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles  12 13
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles  14 15 16
 	@echo "Built target waypoint_planning_generate_messages_py"
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_py.dir/rule
@@ -882,7 +917,7 @@ waypoint_planning/CMakeFiles/waypoint_planning_genlisp.dir/all: waypoint_plannin
 
 # Build rule for subdir invocation for target.
 waypoint_planning/CMakeFiles/waypoint_planning_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/waypoint_planning_genlisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_genlisp.dir/rule
@@ -913,7 +948,7 @@ waypoint_planning/CMakeFiles/waypoint_planning_genpy.dir/all: waypoint_planning/
 
 # Build rule for subdir invocation for target.
 waypoint_planning/CMakeFiles/waypoint_planning_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/waypoint_planning_genpy.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles 0
 .PHONY : waypoint_planning/CMakeFiles/waypoint_planning_genpy.dir/rule

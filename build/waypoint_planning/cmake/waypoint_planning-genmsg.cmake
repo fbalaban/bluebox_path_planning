@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "waypoint_planning: 1 messages, 0 services")
+message(STATUS "waypoint_planning: 2 messages, 0 services")
 
 set(MSG_I_FLAGS "-Iwaypoint_planning:/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
@@ -20,6 +20,11 @@ add_custom_target(_waypoint_planning_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "waypoint_planning" "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg" ""
 )
 
+get_filename_component(_filename "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg" NAME_WE)
+add_custom_target(_waypoint_planning_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "waypoint_planning" "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg" "waypoint_planning/Coordinates"
+)
+
 #
 #  langs = gencpp;genlisp;genpy
 #
@@ -30,6 +35,12 @@ _generate_msg_cpp(waypoint_planning
   "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/waypoint_planning
+)
+_generate_msg_cpp(waypoint_planning
+  "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/waypoint_planning
 )
 
@@ -49,6 +60,8 @@ add_dependencies(waypoint_planning_generate_messages waypoint_planning_generate_
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg" NAME_WE)
 add_dependencies(waypoint_planning_generate_messages_cpp _waypoint_planning_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg" NAME_WE)
+add_dependencies(waypoint_planning_generate_messages_cpp _waypoint_planning_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(waypoint_planning_gencpp)
@@ -63,6 +76,12 @@ _generate_msg_lisp(waypoint_planning
   "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/waypoint_planning
+)
+_generate_msg_lisp(waypoint_planning
+  "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/waypoint_planning
 )
 
@@ -82,6 +101,8 @@ add_dependencies(waypoint_planning_generate_messages waypoint_planning_generate_
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg" NAME_WE)
 add_dependencies(waypoint_planning_generate_messages_lisp _waypoint_planning_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg" NAME_WE)
+add_dependencies(waypoint_planning_generate_messages_lisp _waypoint_planning_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(waypoint_planning_genlisp)
@@ -96,6 +117,12 @@ _generate_msg_py(waypoint_planning
   "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/waypoint_planning
+)
+_generate_msg_py(waypoint_planning
+  "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg"
+  "${MSG_I_FLAGS}"
+  "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/waypoint_planning
 )
 
@@ -114,6 +141,8 @@ add_dependencies(waypoint_planning_generate_messages waypoint_planning_generate_
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg" NAME_WE)
+add_dependencies(waypoint_planning_generate_messages_py _waypoint_planning_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg" NAME_WE)
 add_dependencies(waypoint_planning_generate_messages_py _waypoint_planning_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

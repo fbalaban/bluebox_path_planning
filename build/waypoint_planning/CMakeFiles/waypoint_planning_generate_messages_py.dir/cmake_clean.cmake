@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/waypoint_planning_generate_messages_py"
   "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/lib/python2.7/dist-packages/waypoint_planning/msg/_Coordinates.py"
+  "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/lib/python2.7/dist-packages/waypoint_planning/msg/_Replan_Msg.py"
   "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/lib/python2.7/dist-packages/waypoint_planning/msg/__init__.py"
 )
 

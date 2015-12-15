@@ -1,0 +1,2 @@
+int8 uav_id
+waypoint_planning/Coordinates coordinates

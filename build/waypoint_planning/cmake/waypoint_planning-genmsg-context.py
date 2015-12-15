@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
-messages_str = "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg"
+messages_str = "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg;/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg"
 services_str = ""
 pkg_name = "waypoint_planning"
 dependencies_str = "std_msgs"

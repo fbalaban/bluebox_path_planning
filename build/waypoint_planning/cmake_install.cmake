@@ -33,7 +33,10 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_planning/msg" TYPE FILE FILES "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/waypoint_planning/msg" TYPE FILE FILES
+    "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg"
+    "/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg"
+    )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build
 include waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/progress.make
 
 waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp: /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Coordinates.h
+waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp: /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Replan_Msg.h
 
 /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Coordinates.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
 /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Coordinates.h: /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg
@@ -54,8 +55,17 @@ waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp: /home/foti
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from waypoint_planning/Coordinates.msg"
 	cd /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/waypoint_planning && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg -Iwaypoint_planning:/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p waypoint_planning -o /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning -e /opt/ros/indigo/share/gencpp/cmake/..
 
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Replan_Msg.h: /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Replan_Msg.h: /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Replan_Msg.h: /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Coordinates.msg
+/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Replan_Msg.h: /opt/ros/indigo/share/gencpp/cmake/../msg.h.template
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating C++ code from waypoint_planning/Replan_Msg.msg"
+	cd /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build/waypoint_planning && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg/Replan_Msg.msg -Iwaypoint_planning:/home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/src/waypoint_planning/msg -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p waypoint_planning -o /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning -e /opt/ros/indigo/share/gencpp/cmake/..
+
 waypoint_planning_generate_messages_cpp: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp
 waypoint_planning_generate_messages_cpp: /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Coordinates.h
+waypoint_planning_generate_messages_cpp: /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/devel/include/waypoint_planning/Replan_Msg.h
 waypoint_planning_generate_messages_cpp: waypoint_planning/CMakeFiles/waypoint_planning_generate_messages_cpp.dir/build.make
 .PHONY : waypoint_planning_generate_messages_cpp
 

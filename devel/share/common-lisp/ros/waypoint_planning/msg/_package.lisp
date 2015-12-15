@@ -3,5 +3,7 @@
   (:export
    "<COORDINATES>"
    "COORDINATES"
+   "<REPLAN_MSG>"
+   "REPLAN_MSG"
   ))
 

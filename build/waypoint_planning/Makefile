@@ -164,6 +164,20 @@ _waypoint_planning_generate_messages_check_deps_Coordinates/fast:
 .PHONY : _waypoint_planning_generate_messages_check_deps_Coordinates/fast
 
 # Convenience name for target.
+waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/rule:
+	cd /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/rule
+.PHONY : waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/rule
+
+# Convenience name for target.
+_waypoint_planning_generate_messages_check_deps_Replan_Msg: waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/rule
+.PHONY : _waypoint_planning_generate_messages_check_deps_Replan_Msg
+
+# fast build rule for target.
+_waypoint_planning_generate_messages_check_deps_Replan_Msg/fast:
+	cd /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build && $(MAKE) -f waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/build.make waypoint_planning/CMakeFiles/_waypoint_planning_generate_messages_check_deps_Replan_Msg.dir/build
+.PHONY : _waypoint_planning_generate_messages_check_deps_Replan_Msg/fast
+
+# Convenience name for target.
 waypoint_planning/CMakeFiles/listener.dir/rule:
 	cd /home/fotis/Dev/Workspaces/ROS/bluebox_path_planning/build && $(MAKE) -f CMakeFiles/Makefile2 waypoint_planning/CMakeFiles/listener.dir/rule
 .PHONY : waypoint_planning/CMakeFiles/listener.dir/rule
@@ -576,6 +590,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... _waypoint_planning_generate_messages_check_deps_Coordinates"
+	@echo "... _waypoint_planning_generate_messages_check_deps_Replan_Msg"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"

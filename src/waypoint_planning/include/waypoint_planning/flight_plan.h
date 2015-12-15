@@ -84,7 +84,7 @@ public:
 	void createLocalFP(map inputMap, SwipeDirection SwpDir,
 			int initWPT,  cell *inputCell);
 	void createLocalFP(map inputMap, 
-			int initWPT,  cell *inputCell, double lat, double lon);
+			int initWPT,  cell *inputCell, double lat, double lon, bool forSingleUAV, int uav_id);
 	waypoint sequenceWpt(flightPlan inputFPln, positionMap initPos);
 };
 
