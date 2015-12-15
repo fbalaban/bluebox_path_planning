@@ -2,8 +2,10 @@
 Path planning algorithm. Built for ROS with roscpp, rospy and for mavlink/mavros usage.
 
 This ROS node consists of two listeners (subscribers): 
-	1) Listens on topic 'waypoint_release_spot'.
-	2) Listens on topic 'waypoint_replanner'.
+
+1) Listens on topic 'waypoint_release_spot'.
+
+2) Listens on topic 'waypoint_replanner'.
 
 How to use:
 
