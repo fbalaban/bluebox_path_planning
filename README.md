@@ -1,18 +1,18 @@
 # bluebox_path_planning
 Path planning algorithm. Built for ROS with roscpp, rospy and for mavlink/mavros usage.
 
-This ROS node consists of two listeners (subscribers):
-1) Listens on topic 'waypoint_release_spot'.
-2) Listens on topic 'waypoint_replanner'.
+This ROS node consists of two listeners (subscribers): 
+	1) Listens on topic 'waypoint_release_spot'.
+	2) Listens on topic 'waypoint_replanner'.
 
 How to use:
-1) If a 'waypoint_planning/Coordinates'(float64 longitude, float64 latitude) message is published in that topic,
-then the listener produces 4 waypoint path files (wpPlanUAV$I.txt - mavlink dialect) around the initial spot. 
-(I = 1,2,3,4)
 
-2) If a 'waypoint_planning/Replan_Msg'(int8 uav_id, waypoint_planning/Coordinates coordinates) message is published in that topic,
-then the listener produces a waypoint path file (wpPlanUAV$uav_id.txt - mavlink dialect), having as a starting point (Coordinates)
-the bottom left corner of a rectangle.
+	1) If a 'waypoint_planning/Coordinates'(float64 longitude, float64 latitude) message is published in that topic,
+	then the listener produces 4 waypoint path files (wpPlanUAV$I.txt - mavlink dialect) around the initial spot. (I = 1,2,3,4)
+
+	2) If a 'waypoint_planning/Replan_Msg'(int8 uav_id, waypoint_planning/Coordinates coordinates) message is published in that topic,
+	then the listener produces a waypoint path file (wpPlanUAV$uav_id.txt - mavlink dialect), having as a starting point (Coordinates)
+	the bottom left corner of a rectangle.
 
 For now the coverage is static. Each path covers an area of 2km by 2km and the footprint size is 250m.
 
@@ -36,8 +36,8 @@ Sum up:
 3. 'rosrun waypoint_planning listener'.
 4. Either:
  
-  4.1.1 rostopic pub -1 /waypoint_release_spot waypoint_planning/Coordinates [longitude] [latitude] (for 4 UAVs)
-  4.1.2 rostopic pub -1 /waypoint_replanner waypoint_planning/Replan_Msg [uav_id] [longitude] [latitude] (for single UAV)
+  4.1.1 rostopic pub -1 /waypoint_release_spot waypoint_planning/Coordinates [longitude] [latitude] ('for 4 UAVs')
+  4.1.2 rostopic pub -1 /waypoint_replanner waypoint_planning/Replan_Msg [uav_id] [longitude] [latitude] ('for single UAV')
  
  or
 
