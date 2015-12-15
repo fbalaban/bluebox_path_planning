@@ -7,12 +7,12 @@ This ROS node consists of two listeners (subscribers):
 
 How to use:
 
-	1) If a 'waypoint_planning/Coordinates'(float64 longitude, float64 latitude) message is published in that topic,
-	then the listener produces 4 waypoint path files (wpPlanUAV$I.txt - mavlink dialect) around the initial spot. (I = 1,2,3,4)
+1) If a 'waypoint_planning/Coordinates'(float64 longitude, float64 latitude) message is published in that topic,
+then the listener produces 4 waypoint path files (wpPlanUAV$I.txt - mavlink dialect) around the initial spot. (I = 1,2,3,4)
 
-	2) If a 'waypoint_planning/Replan_Msg'(int8 uav_id, waypoint_planning/Coordinates coordinates) message is published in that topic,
-	then the listener produces a waypoint path file (wpPlanUAV$uav_id.txt - mavlink dialect), having as a starting point (Coordinates)
-	the bottom left corner of a rectangle.
+2) If a 'waypoint_planning/Replan_Msg'(int8 uav_id, waypoint_planning/Coordinates coordinates) message is published in that topic,
+then the listener produces a waypoint path file (wpPlanUAV$uav_id.txt - mavlink dialect), having as a starting point (Coordinates)
+the bottom left corner of a rectangle.
 
 For now the coverage is static. Each path covers an area of 2km by 2km and the footprint size is 250m.
 
@@ -36,13 +36,13 @@ Sum up:
 3. 'rosrun waypoint_planning listener'.
 4. Either:
  
-  4.1.1 rostopic pub -1 /waypoint_release_spot waypoint_planning/Coordinates [longitude] [latitude] ('for 4 UAVs')
-  4.1.2 rostopic pub -1 /waypoint_replanner waypoint_planning/Replan_Msg [uav_id] [longitude] [latitude] ('for single UAV')
+  4.1.1 rostopic pub -1 /waypoint_release_spot waypoint_planning/Coordinates $longitude $latitude (4 UAVs)
+  4.1.2 rostopic pub -1 /waypoint_replanner waypoint_planning/Replan_Msg $uav_id $longitude $latitude (single UAV)
  
  or
 
-  4.2.1 path_planning_service_publisher.py [longitude] [latitude]
-  4.2.1 path_replanning_service_publisher.py [uav_id] [longitude] [latitude]
+  4.2.1 path_planning_service_publisher.py $longitude $latitude
+  4.2.1 path_replanning_service_publisher.py $uav_id $longitude$ $latitude
 
 In 4.2.1 four (4) mavros instances must be up having names mavros$I.
 In 4.2.2 one mavros instance must be named mavros$uav_id.
