@@ -1,4 +1,8 @@
 # bluebox_path_planning
+
+  Warning: please see raised issue. The code is not accurate, it was a custom solution for a specific project. Will be updated or otherwise removed from github until Jan/2020
+
+
 Path planning algorithm. Built for ROS with roscpp, rospy and for mavlink/mavros usage.
 
 This ROS node consists of two listeners (subscribers): 
